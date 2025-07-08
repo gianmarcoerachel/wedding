@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partecipazione di Matrimonio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f9f7f5; /* Un colore di sfondo leggermente avorio */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        .name-placeholder {
+            /* Stili per i placeholder delle immagini dei nomi */
+            font-family: 'Cormorant Garamond', serif; /* Mantengo Cormorant Garamond per i placeholder, puoi cambiarlo quando metti le immagini */
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            color: #5a86ad;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ampersand-placeholder {
+            font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond anche per la '&' */
+            font-size: 2em;
+            margin: 0 0 15px 0;
+            color: #5a86ad;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .announcement {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #5a86ad;
+        }
+
+        .date-time {
+            font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per la data */
+            font-size: 1.3em;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #5a86ad;
+        }
+
+        .time {
+            font-family: 'Cormorant SC', serif; /* Cormorant SC per "ORE 12" */
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #5a86ad;
+            text-transform: uppercase; /* Generalmente i Small Caps sono usati in uppercase */
+        }
+
+        .location {
+            font-family: 'Cormorant SC', serif; /* Cormorant SC per "DUOMO DI AMALFI" */
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #5a86ad;
+        }
+
+        .reception-details {
+            font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per i dettagli del ricevimento */
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #5a86ad;
+        }
+
+        .rsvp {
+            font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per RSVP */
+            font-size: 1em;
+            color: #5a86ad;
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+
+        /* Stili per le immagini di sfondo/decorazioni se presenti */
+        .top-right-decor, .bottom-left-decor {
+            position: absolute;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        .top-right-decor {
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            background-image: url('placeholder_fiore_top_right.png'); /* Sostituisci con la tua immagine */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .bottom-left-decor {
+            bottom: 20px;
+            left: 20px;
+            width: 150px;
+            height: 150px;
+            background-image: url('placeholder_fiore_bottom_left.png'); /* Sostituisci con la tua immagine */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-right-decor"></div>
+    <div class="bottom-left-decor"></div>
+
+    <div class="container">
+        <div class="name-placeholder" id="rachel-porpora-img">Rachel Porpora</div>
+        <div class="ampersand-placeholder" id="ampersand-img">&</div>
+        <div class="name-placeholder" id="gianmarco-russo-img">Gianmarco Russo</div>
+
+        <p class="announcement">SONO FELICI DI ANNUNCIARE<br>IL LORO MATRIMONIO</p>
+
+        <p class="date-time">Domenica 19 Ottobre 2025</p>
+        <p class="time">ORE 12</p>
+        <p class="location">DUOMO DI AMALFI</p>
+
+        <p class="reception-details">
+            DOPO LA CERIMONIA INVITANO AMICI E PARENTI A<br>
+            FESTEGGIARE PRESSO<br>
+            RISTORANTE TORRE NORMANNA, MAIORI (SA)
+        </p>
+
+        <p class="rsvp">Gradita conferma entro<br>il 15 settembre</p>
+    </div>
+</body>
+</html>
