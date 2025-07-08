@@ -8,7 +8,6 @@ body {
 	align-items: center;
 	margin: 0;
 	background-color: #f9f7f5; /* Un colore di sfondo leggermente avorio */
-	color: #333;
 	text-align: center;
 	padding: 20px;
 	box-sizing: border-box;
@@ -39,8 +38,8 @@ body {
 }
 
 .name-rachel {
-	margin-top: 40px;
 	margin-right: 100px;
+	margin-top: 80px;
 }
 
 .name-gianmarco {
@@ -55,13 +54,13 @@ body {
 }
 
 .ampersand-placeholder img {
-	width: 40px;
+	width: 7%;
 }
 
 .announcement {
 	font-size: 1.1em;
 	margin-bottom: 30px;
-	color: #5a86ad;
+	color: #588dcb;
 }
 
 .date-time {
@@ -69,7 +68,7 @@ body {
 	font-size: 1.3em;
 	margin-bottom: 5px;
 	font-weight: bold;
-	color: #5a86ad;
+	color: #588dcb;
 }
 
 .time {
@@ -77,7 +76,7 @@ body {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 	font-weight: bold;
-	color: #5a86ad;
+	color: #588dcb;
 	text-transform: uppercase; /* Generalmente i Small Caps sono usati in uppercase */
 }
 
@@ -87,7 +86,7 @@ body {
 	margin-bottom: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #5a86ad;
+	color: #588dcb;
 }
 
 .reception-details {
@@ -95,13 +94,13 @@ body {
 	font-size: 1.1em;
 	margin-bottom: 30px;
 	line-height: 1.6;
-	color: #5a86ad;
+	color: #588dcb;
 }
 
 .rsvp {
 	font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per RSVP */
 	font-size: 1em;
-	color: #5a86ad;
+	color: #588dcb;
 	margin-top: 40px;
 	padding-top: 20px;
 }
