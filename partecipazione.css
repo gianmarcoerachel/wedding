@@ -1,0 +1,134 @@
+html {
+	height: 100%;
+}
+body {
+	font-family: 'Cormorant Garamond', serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	background-color: #f9f7f5; /* Un colore di sfondo leggermente avorio */
+	color: #333;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	position: relative;
+	height: 100%;
+}
+
+.container {
+	max-width: 600px;
+	width: 100%;
+	padding: 40px;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+	height: 100%;
+}
+
+.name-placeholder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.name-placeholder img {
+	width: -webkit-fill-available;
+}
+
+.name-rachel {
+	margin-top: 40px;
+	margin-right: 100px;
+}
+
+.name-gianmarco {
+	margin-top: -10px;
+	margin-left: 100px;
+}
+
+.ampersand-placeholder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ampersand-placeholder img {
+	width: 40px;
+}
+
+.announcement {
+	font-size: 1.1em;
+	margin-bottom: 30px;
+	color: #5a86ad;
+}
+
+.date-time {
+	font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per la data */
+	font-size: 1.3em;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #5a86ad;
+}
+
+.time {
+	font-family: 'Cormorant SC', serif; /* Cormorant SC per "ORE 12" */
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #5a86ad;
+	text-transform: uppercase; /* Generalmente i Small Caps sono usati in uppercase */
+}
+
+.location {
+	font-family: 'Cormorant SC', serif; /* Cormorant SC per "DUOMO DI AMALFI" */
+	font-size: 1.2em;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #5a86ad;
+}
+
+.reception-details {
+	font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per i dettagli del ricevimento */
+	font-size: 1.1em;
+	margin-bottom: 30px;
+	line-height: 1.6;
+	color: #5a86ad;
+}
+
+.rsvp {
+	font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per RSVP */
+	font-size: 1em;
+	color: #5a86ad;
+	margin-top: 40px;
+	padding-top: 20px;
+}
+
+/* Stili per le immagini di sfondo/decorazioni se presenti */
+.top-right-decor, .bottom-left-decor {
+	position: absolute;
+	opacity: 0.2;
+	z-index: 0;
+}
+
+.top-right-decor {
+	top: 20px;
+	right: 20px;
+	width: 150px;
+	height: 150px;
+	background-image: url('placeholder_fiore_top_right.png'); /* Sostituisci con la tua immagine */
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.bottom-left-decor {
+	bottom: 20px;
+	left: 20px;
+	width: 150px;
+	height: 150px;
+	background-image: url('placeholder_fiore_bottom_left.png'); /* Sostituisci con la tua immagine */
+	background-size: contain;
+	background-repeat: no-repeat;
+}
