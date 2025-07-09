@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-	max-width: 600px;
+	max-width: 500px;
 	width: 100%;
 	padding: 40px;
 	border: 1px solid #ddd;
@@ -24,8 +24,29 @@ body {
 	background-color: #fff;
 	position: relative;
 	z-index: 1;
-	height: 100%;
+	background-image: url('sfondo.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+a {
+  color: #588dcb;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #588dcb;
+}
+
+a:hover {
+  color: #588dcb;
+}
+
+a:active {
+  color: #588dcb;
+}
+
 
 .name-placeholder {
 	display: flex;
@@ -40,6 +61,7 @@ body {
 .name-rachel {
 	margin-right: 100px;
 	margin-top: 80px;
+	z-index: 99;
 }
 
 .name-gianmarco {
@@ -105,29 +127,31 @@ body {
 	padding-top: 20px;
 }
 
-/* Stili per le immagini di sfondo/decorazioni se presenti */
+/* Stili per le immagini di sfondo/decorazioni se presenti 
 .top-right-decor, .bottom-left-decor {
 	position: absolute;
-	opacity: 0.2;
+	opacity: 0.5;
 	z-index: 0;
 }
 
 .top-right-decor {
-	top: 20px;
-	right: 20px;
-	width: 150px;
-	height: 150px;
-	background-image: url('placeholder_fiore_top_right.png'); /* Sostituisci con la tua immagine */
+	top: -280px;
+	right: -150px;
+	width: 450px;
+	height: 450px;
+	background-image: url('fioreLungo.PNG');
 	background-size: contain;
+	transform: rotate(-130deg);
 	background-repeat: no-repeat;
 }
 
 .bottom-left-decor {
-	bottom: 20px;
-	left: 20px;
-	width: 150px;
-	height: 150px;
-	background-image: url('placeholder_fiore_bottom_left.png'); /* Sostituisci con la tua immagine */
+	bottom: -280px;
+	left: -150px;
+	width: 450px;
+	height: 450px;
+	background-image: url('fioreLungo.PNG');
 	background-size: contain;
+	transform: rotate(30deg);
 	background-repeat: no-repeat;
-}
+}*/
