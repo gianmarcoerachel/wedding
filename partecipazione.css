@@ -13,6 +13,7 @@ body {
 	box-sizing: border-box;
 	position: relative;
 	height: 100%;
+	font-size: 16px;
 }
 
 .container {
@@ -122,6 +123,18 @@ a:active {
 	color: #588dcb;
 	margin-top: 40px;
 	padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 12px !important;
+  }
 }
 
 /* Stili per le immagini di sfondo/decorazioni se presenti 
