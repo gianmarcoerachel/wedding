@@ -83,14 +83,12 @@ a:active {
 }
 
 .announcement {
-	font-size: 1.1em;
 	margin-bottom: 30px;
 	color: #588dcb;
 }
 
 .date-time {
 	font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per la data */
-	font-size: 1.3em;
 	margin-bottom: 5px;
 	font-weight: bold;
 	color: #588dcb;
@@ -98,7 +96,6 @@ a:active {
 
 .time {
 	font-family: 'Cormorant SC', serif; /* Cormorant SC per "ORE 12" */
-	font-size: 1.2em;
 	margin-bottom: 20px;
 	font-weight: bold;
 	color: #588dcb;
@@ -107,7 +104,6 @@ a:active {
 
 .location {
 	font-family: 'Cormorant SC', serif; /* Cormorant SC per "DUOMO DI AMALFI" */
-	font-size: 1.2em;
 	margin-bottom: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -116,7 +112,6 @@ a:active {
 
 .reception-details {
 	font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per i dettagli del ricevimento */
-	font-size: 1.1em;
 	margin-bottom: 30px;
 	line-height: 1.6;
 	color: #588dcb;
@@ -124,7 +119,6 @@ a:active {
 
 .rsvp {
 	font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per RSVP */
-	font-size: 1em;
 	color: #588dcb;
 	margin-top: 40px;
 	padding-top: 20px;
