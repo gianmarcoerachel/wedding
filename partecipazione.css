@@ -17,8 +17,13 @@ body {
 }
 
 .container {
+	min-height: 750px;
 	max-width: 500px;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 40px;
 	border: 1px solid #ddd;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -64,8 +69,6 @@ a:active {
 
 .name-rachel {
 	margin-right: 100px;
-	margin-top: 80px;
-	z-index: 99;
 }
 
 .name-gianmarco {
@@ -80,7 +83,7 @@ a:active {
 }
 
 .ampersand-placeholder img {
-	width: 7%;
+	width: 13%;
 }
 
 .announcement {
@@ -135,6 +138,35 @@ a:active {
   body {
     font-size: 12px !important;
   }
+  
+  .container {
+	  padding: 20px;
+  }
+}
+
+.floating-button-inside {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 44px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.floating-button-inside:hover {
+  background-color: #416ea2;
+}
+
+.floating-button-inside i {
+  font-size: 18px;
 }
 
 /* Stili per le immagini di sfondo/decorazioni se presenti 
