@@ -16,41 +16,42 @@ body {
 	font-size: 16px;
 }
 
+
 .container {
-	min-height: 750px;
-	max-width: 500px;
-	width: 100%;
+	position: relative;
+	max-width: 660px;
+	height: 90vh; /* or 100vh if no top/bottom margins wanted */
+	aspect-ratio: 1240 / 1748;
+	background-image: url('sfondo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	background-color: white;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 40px;
-	border: 1px solid #ddd;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
-	background-color: #fff;
-	position: relative;
-	z-index: 1;
-	background-image: url('sfondo.png');
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+	box-sizing: border-box;
 }
 
 a {
-  color: #588dcb;
-  text-decoration: underline;
+	color: #588dcb;
+	text-decoration: underline;
 }
 
 a:visited {
-  color: #588dcb;
+	color: #588dcb;
 }
 
 a:hover {
-  color: #588dcb;
+	color: #588dcb;
 }
 
 a:active {
-  color: #588dcb;
+	color: #588dcb;
 }
 
 
@@ -129,43 +130,79 @@ a:active {
 }
 
 @media (max-width: 768px) {
-  body {
-    font-size: 14px !important;
-  }
+	body {
+		font-size: 14px !important;
+		padding: 10px;
+	}
+
+	.container {
+		padding: 30px 20px;
+		max-width: 600px;
+		height: 843px;
+	}
+
+	.name-rachel {
+		margin-right: 80px;
+	}
+
+	.name-gianmarco {
+		margin-top: -5px;
+		margin-left: 80px;
+	}
+
+	.floating-button-inside {
+		width: 40px;
+		height: 40px;
+	}
 }
 
 @media (max-width: 600px) {
-  body {
-    font-size: 12px !important;
-  }
-  
-  .container {
-	  padding: 20px;
-  }
+	body {
+		font-size: 13px !important;
+	}
+
+	.container {
+		padding: 20px 15px;
+		max-width: 600px;
+		height: 705px;
+	}
+
+	.name-placeholder img {
+		max-width: 90%;
+	}
+
+	.floating-button-inside {
+		width: 36px;
+		height: 36px;
+	}
+
+	.floating-button-inside i {
+		font-size: 16px;
+	}
 }
 
 .floating-button-inside {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  z-index: 10;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+	z-index: 10;
 }
 
 .floating-button-inside:hover {
-  background-color: #416ea2;
+	background-color: #416ea2;
 }
 
 .floating-button-inside i {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 /* Stili per le immagini di sfondo/decorazioni se presenti 
