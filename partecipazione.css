@@ -19,8 +19,7 @@ body {
 
 .container {
 	position: relative;
-	max-width: 660px;
-	height: 90vh; /* or 100vh if no top/bottom margins wanted */
+	width: 600px;
 	aspect-ratio: 1240 / 1748;
 	background-image: url('sfondo.png');
 	background-size: contain;
@@ -92,93 +91,44 @@ a:active {
 	color: #588dcb;
 }
 
+.date-time, .time, .location {
+	font-size: 20px;
+}
+
 .date-time {
-	font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per la data */
+	font-family: 'Great Vibes', cursive;
 	margin-bottom: 5px;
 	font-weight: bold;
 	color: #588dcb;
 }
 
 .time {
-	font-family: 'Cormorant SC', serif; /* Cormorant SC per "ORE 12" */
+	font-family: 'Great Vibes', cursive;
 	margin-bottom: 20px;
 	font-weight: bold;
 	color: #588dcb;
-	text-transform: uppercase; /* Generalmente i Small Caps sono usati in uppercase */
+	text-transform: uppercase;
 }
 
 .location {
-	font-family: 'Cormorant SC', serif; /* Cormorant SC per "DUOMO DI AMALFI" */
+	font-family: 'Great Vibes', cursive;
 	margin-bottom: 40px;
-	text-transform: uppercase;
 	font-weight: bold;
 	color: #588dcb;
 }
 
 .reception-details {
-	font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per i dettagli del ricevimento */
+	font-family: 'Cormorant Garamond', serif;
 	margin-bottom: 30px;
 	line-height: 1.6;
 	color: #588dcb;
 }
 
 .rsvp {
-	font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond per RSVP */
+	font-family: 'Cormorant Garamond', serif;
 	color: #588dcb;
 	margin-top: 40px;
 	padding-top: 20px;
-}
-
-@media (max-width: 768px) {
-	body {
-		font-size: 14px !important;
-		padding: 10px;
-	}
-
-	.container {
-		padding: 30px 20px;
-		max-width: 600px;
-		height: 843px;
-	}
-
-	.name-rachel {
-		margin-right: 80px;
-	}
-
-	.name-gianmarco {
-		margin-top: -5px;
-		margin-left: 80px;
-	}
-
-	.floating-button-inside {
-		width: 40px;
-		height: 40px;
-	}
-}
-
-@media (max-width: 600px) {
-	body {
-		font-size: 13px !important;
-	}
-
-	.container {
-		padding: 20px 15px;
-		max-width: 600px;
-		height: 705px;
-	}
-
-	.name-placeholder img {
-		max-width: 90%;
-	}
-
-	.floating-button-inside {
-		width: 36px;
-		height: 36px;
-	}
-
-	.floating-button-inside i {
-		font-size: 16px;
-	}
 }
 
 .floating-button-inside {
@@ -205,31 +155,72 @@ a:active {
 	font-size: 18px;
 }
 
-/* Stili per le immagini di sfondo/decorazioni se presenti 
-.top-right-decor, .bottom-left-decor {
-	position: absolute;
-	opacity: 0.5;
-	z-index: 0;
+.flower-placeholder img {
+	max-width: 55%;
 }
 
-.top-right-decor {
-	top: -280px;
-	right: -150px;
-	width: 450px;
-	height: 450px;
-	background-image: url('fioreLungo.PNG');
-	background-size: contain;
-	transform: rotate(-130deg);
-	background-repeat: no-repeat;
-}
+@media (max-width: 600px) {
+	body {
+		font-size: 13px !important;
+	}
+	
+	.ampersand-placeholder img {
+		margin: 3px;
+	}
+	
+	.date-time, .time, .location {
+		font-size: 17px;
+	}
 
-.bottom-left-decor {
-	bottom: -280px;
-	left: -150px;
-	width: 450px;
-	height: 450px;
-	background-image: url('fioreLungo.PNG');
-	background-size: contain;
-	transform: rotate(30deg);
-	background-repeat: no-repeat;
-}*/
+	.container {
+		width: 500px;
+	}
+
+	.name-placeholder img {
+		max-width: 90% !important;;
+	}
+	
+	.flower-placeholder img {
+		max-width: 45%;
+	}
+
+	.floating-button-inside {
+		width: 36px !important;
+		height: 36px !important;
+	}
+
+	.reception-details {
+		margin-bottom: 0px;
+	}
+
+@media (max-width: 480px) {
+	body {
+		font-size: 11px !important;
+	}
+	
+	.ampersand-placeholder img {
+		width: 9%;
+		margin: 5px;
+	}
+	
+	.date-time, .time, .location {
+		font-size: 15px;
+	}
+
+	.container {
+		width: 430px;
+	}
+
+	.name-placeholder img {
+		max-width: 70% !important;
+	}
+	
+	.flower-placeholder img {
+		max-width: 35%;
+	}
+	
+	.rsvp {
+		margin-top: 0px !important;
+	}
+
+}
