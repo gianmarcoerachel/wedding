@@ -87,12 +87,16 @@ a:active {
 }
 
 .announcement {
-	margin-bottom: 30px;
+	margin-top: 25px;
 	color: #588dcb;
 }
 
-.date-time, .time, .location {
-	font-size: 20px;
+.date-time {
+	font-size: 24px;
+}
+
+.time, .location {
+	font-size: 22px;
 }
 
 .date-time {
@@ -104,7 +108,7 @@ a:active {
 
 .time {
 	font-family: 'Great Vibes', cursive;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-weight: bold;
 	color: #588dcb;
 }
@@ -118,7 +122,7 @@ a:active {
 
 .reception-details {
 	font-family: 'Cormorant Garamond', serif;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	line-height: 1.6;
 	color: #588dcb;
 }
@@ -126,13 +130,13 @@ a:active {
 .rsvp {
 	font-family: 'Cormorant Garamond', serif;
 	color: #588dcb;
-	margin-top: 40px;
+	margin-top: 25px;
 	padding-top: 20px;
 }
 
 .floating-button-inside {
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 44px;
@@ -167,7 +171,11 @@ a:active {
 		margin: 3px;
 	}
 	
-	.date-time, .time, .location {
+	.date-time {
+		font-size: 21px;
+	}
+
+	.time, .location {
 		font-size: 17px;
 	}
 
@@ -202,7 +210,10 @@ a:active {
 		margin: 5px;
 	}
 	
-	.date-time, .time, .location {
+	.date-time {
+		font-size: 19px;
+	}
+	.time, .location {
 		font-size: 15px;
 	}
 

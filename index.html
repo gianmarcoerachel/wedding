@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-  <title>Partecipazione di Nozze</title>
+  <title>Rachel e Gianmarco</title>
   <style>
     body {
       margin: 0;
@@ -42,43 +42,65 @@
       transform: translate(-50%, -50%);
       width: 180px;
       height: auto;
+      z-index: 2;
     }
 
-	.curved-text-wrapper {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 200px;
-		height: 100px;
-		margin-top: -90px;
-	}
+    .shadow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 150px;
+      height: 150px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(1.2);
+      filter: blur(12px);
+      z-index: 1;
+    }
 
-	.open-curved-text {
-		font-family: 'Cormorant Garamond', serif;
-		font-size: 18px;
-		font-weight: bold;
-		fill: #4994b3;
-		text-align: center;
-	}
+    .curved-text-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 100px;
+      margin-top: -90px;
+      z-index: 3;
+    }
+
+    .open-curved-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: bold;
+      fill: #4994b3;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="center-line"></div>
+    
+    <!-- Ombra sotto l'immagine -->
+    <div class="shadow"></div>
+
+    <!-- Immagine -->
     <a href="partecipazione.html">
-		<img src="ceraLacca.png" alt="Sigillo RG" class="logo" />
-	</a>
-	<div class="curved-text-wrapper">
-		<svg viewBox="0 0 200 100">
-			<path id="curvePath" d="M 10 70 Q 100 0 190 70" fill="transparent" />
-			<text class="open-curved-text">
-				<textPath href="#curvePath" startOffset="50%" text-anchor="middle">
-					Clicca per aprire
-				</textPath>
-			</text>
-		</svg>
-	</div>
+      <img src="ceraLacca.png" alt="Sigillo RG" class="logo" />
+    </a>
+
+    <!-- Testo curvo -->
+    <div class="curved-text-wrapper">
+      <svg viewBox="0 0 200 100">
+        <path id="curvePath" d="M 10 70 Q 100 0 190 70" fill="transparent" />
+        <text class="open-curved-text">
+          <textPath href="#curvePath" startOffset="50%" text-anchor="middle">
+            Clicca per aprire
+          </textPath>
+        </text>
+      </svg>
+    </div>
   </div>
 </body>
 </html>
