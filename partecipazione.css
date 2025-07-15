@@ -213,16 +213,26 @@ a:active {
 	.date-time {
 		font-size: 19px;
 	}
+	
 	.time, .location {
 		font-size: 15px;
+	}
+	
+	.location {
+		margin-bottom: 15px;
 	}
 
 	.container {
 		width: 430px;
 	}
 
-	.name-placeholder img {
-		max-width: 70% !important;
+	.name-rachel {
+		margin-right: 80px;
+	}
+
+	.name-gianmarco {
+		margin-top: -5px;
+		margin-left: 80px;
 	}
 	
 	.flower-placeholder img {
@@ -231,6 +241,10 @@ a:active {
 	
 	.rsvp {
 		margin-top: 0px !important;
+	}
+	
+	.floating-button-inside {
+		bottom: 12px;
 	}
 
 }
